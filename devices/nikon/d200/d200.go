@@ -1,3 +1,3 @@
 package d200
 
-const Model = ""
+const Model = "NIKON D200"
