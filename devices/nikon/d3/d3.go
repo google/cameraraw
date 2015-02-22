@@ -1,3 +1,3 @@
 package d3
 
-const Model = ""
+const Model = "NIKON D3"
