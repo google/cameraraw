@@ -99,3 +99,55 @@ type NefIFD0ExifIFD struct {
 type NefIFD0GPSIFD struct {
 	GPSVersionID []byte `tiff:"field,tag=0"`
 }
+
+type Makernote struct {
+	Version                   []byte     `tiff:"field,tag=1"`
+	ISOSpeed                  []uint16   `tiff:"field,tag=2"`
+	Quality                   string     `tiff:"field,tag=4"`
+	WhiteBalance              string     `tiff:"field,tag=5"`
+	FocusMode                 string     `tiff:"field,tag=7"`
+	FlashSetting              string     `tiff:"field,tag=8"`
+	FlashDevice               string     `tiff:"field,tag=9"`
+	WhiteBalanceFineTune      []int16    `tiff:"field,tag=11"`
+	WB_RBLevels               []*big.Rat `tiff:"field,tag=12"`
+	ProgramShift              []byte     `tiff:"field,tag=13"`
+	ExposureDifference        []byte     `tiff:"field,tag=14"`
+	PreviewIFD                uint32     `tiff:"field,tag=17"`
+	ISOSetting                []uint16   `tiff:"field,tag=19"`
+	ExternalFlashExposureComp []byte     `tiff:"field,tag=23"`
+	FlashExposureBracketValue []byte     `tiff:"field,tag=24"`
+	ExposureBracketValue      *big.Rat   `tiff:"field,tag=25"`
+	CropHiSpeed               []uint16   `tiff:"field,tag=27"`
+	ExposureTuning            []byte     `tiff:"field,tag=28"`
+	SerialNumber              string     `tiff:"field,tag=29"`
+	ColorSpace                uint16     `tiff:"field,tag=30"`
+	VRInfo                    []byte     `tiff:"field,tag=31"`
+	ImageAuthentication       byte       `tiff:"field,tag=32"`
+	ActiveD_Lighting          uint16     `tiff:"field,tag=34"`
+	PictureControlData        []byte     `tiff:"field,tag=35"`
+	WorldTime                 []byte     `tiff:"field,tag=36"`
+	ISOInfo                   []byte     `tiff:"field,tag=37"`
+	LensType                  byte       `tiff:"field,tag=131"`
+	Lens                      []*big.Rat `tiff:"field,tag=132"`
+	FlashMode                 byte       `tiff:"field,tag=135"`
+	ShootingMode              uint16     `tiff:"field,tag=137"`
+	AutoBracketRelease        uint16     `tiff:"field,tag=138"`
+	LensFStops                []byte     `tiff:"field,tag=139"`
+	ContrastCurve             []byte     `tiff:"field,tag=140"`
+	ShotInfo                  []byte     `tiff:"field,tag=145"`
+	NoiseReduction            string     `tiff:"field,tag=149"`
+	ColorBalance              []byte     `tiff:"field,tag=151"`
+	LensData                  []byte     `tiff:"field,tag=152"`
+	RawImageCenter            []uint16   `tiff:"field,tag=153"`
+	RetouchHistory            []uint16   `tiff:"field,tag=158"`
+	UNKNOWN_TAG_163           byte       `tiff:"field,tag=163"`
+	UNKNOWN_TAG_164           []byte     `tiff:"field,tag=164"`
+	ShutterCount              uint32     `tiff:"field,tag=167"`
+	FlashInfo                 []byte     `tiff:"field,tag=168"`
+	MultiExposure             []byte     `tiff:"field,tag=176"`
+	HighISONoiseReduction     uint16     `tiff:"field,tag=177"`
+	AFInfo2                   []byte     `tiff:"field,tag=183"`
+	FileInfo                  []byte     `tiff:"field,tag=184"`
+	AFTune                    []byte     `tiff:"field,tag=185"`
+	UNKNOWN_TAG_186           []byte     `tiff:"field,tag=186"`
+}
