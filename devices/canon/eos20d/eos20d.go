@@ -1,3 +1,3 @@
 package eos20d
 
-const Model = ""
+const Model = "Canon EOS 20D"
