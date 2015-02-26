@@ -1,3 +1,3 @@
 package eos1dmarkiin
 
-const Model = ""
+const Model = "Canon EOS-1D Mark II N"
