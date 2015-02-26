@@ -1,3 +1,3 @@
 package d2x
 
-const Model = ""
+const Model = "NIKON D2X"
