@@ -4,7 +4,7 @@
 
 package nikon
 
-import "jonathanpittman.com/tiff"
+import "github.com/google/tiff"
 
 var (
 	MakerNoteTags     = tiff.NewTagSet("NikonMakerNote", 0, 65535)
